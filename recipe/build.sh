@@ -8,3 +8,5 @@ make test
 fi
 
 go-licenses save "${SRC_DIR}/cmd/micro" --save_path=license-files
+mkdir -p ${PREFIX}/bin
+install -m 755 micro ${PREFIX}/bin
